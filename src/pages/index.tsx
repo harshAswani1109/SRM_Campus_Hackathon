@@ -6,7 +6,7 @@ import Navbar from "components/navbar";
 import Footer from "components/footer";
 import tp from "../../public/images/Rectangle24.png";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

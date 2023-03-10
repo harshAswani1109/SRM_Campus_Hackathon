@@ -11,7 +11,10 @@ const Facilities = () => {
         <div className="flex gap-1 border-2 border-solid">
           {fields.map((el) => {
             return (
-              <div className={`border-l-2 p-5 border-solid ${el.class}`}>
+              <div
+                key={el.Name}
+                className={`border-l-2 p-5 border-solid ${el.class}`}
+              >
                 {el.Name}
               </div>
             );
@@ -20,7 +23,7 @@ const Facilities = () => {
         <div className="border-2 border-solid">
           {facilityData.map((el) => {
             return (
-              <div className="flex gap-1">
+              <div className="flex gap-1" key={el.no}>
                 <div className="w-20 p-5 border-b-2 border-l-2">{el.no}</div>
                 <div className="w-40 p-5 border-b-2 border-l-2 ">{el.name}</div>
                 <div className="w-40 p-5 border-b-2 border-l-2">
